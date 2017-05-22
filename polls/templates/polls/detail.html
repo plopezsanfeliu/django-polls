@@ -5,10 +5,12 @@
     <title>Polls detail {{question.id}}</title>
 </head>
 <body>
+
 <h1>Question information</h1>
 ID: {{question.id}}. {{ question }} <br />
 {% for choice in question.choice_set.all %}
 <li>{{ choice }}</li>
 {% endfor %}
+
 </body>
 </html>
